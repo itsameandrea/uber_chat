@@ -1,0 +1,7 @@
+<h1> Yo! These are your orders </h1>
+
+<ul>
+  <% @orders.each do |order| %>
+    <li> <%= link_to "Order #{order.id}", order_path(order) %> </li>
+  <% end %>
+</ul> 

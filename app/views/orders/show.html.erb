@@ -1,0 +1,13 @@
+<h1> Order #<%= @order.id%> </h1>
+
+<h3> Messages </h3>
+
+<div
+  class="messages-box"
+  data-order-id="<%= @order.id %>"
+></div>
+
+<form class="new-message-form">
+  <input type="text" placeholder="Hola!" class="new-message-input">
+  <input type="submit">
+</form>
